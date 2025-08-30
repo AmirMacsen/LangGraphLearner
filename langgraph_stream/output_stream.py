@@ -24,5 +24,5 @@ main_builder.add_edge("node1", END)
 
 main_graph = main_builder.compile()
 
-for chunk in main_graph.stream(MainState(answer=["process node1"]), stream_mode="debug"):
+for chunk in main_graph.stream(MainState(answer=["process node"]), stream_mode="debug"):
     print(chunk)
